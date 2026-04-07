@@ -23,7 +23,7 @@
   --sans:'DM Sans',system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--sans);background:var(--near-black);color:#222;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:#fff;color:#222;min-height:100vh;-webkit-font-smoothing:antialiased}
 /* Hero */
 .hero{background:#fff;padding:48px 24px 56px;text-align:center;position:relative;overflow:hidden}
 .hero-topbar{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--gold) 80%,transparent)}
@@ -70,10 +70,10 @@ body{font-family:var(--sans);background:var(--near-black);color:#222;min-height:
 .no-result{text-align:center;padding:24px 0 4px;color:var(--gray);font-size:14px;display:none}
 .no-result.show{display:block}
 /* Browse */
-.browse-section{max-width:660px;margin:0 auto;padding:0 20px 72px}
-.browse-heading{font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#fff;margin-bottom:12px}
-.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:6px}
-.bb{font-family:var(--sans);font-size:15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);color:#fff;padding:10px 13px;cursor:pointer;text-align:left;transition:all .12s}
+.browse-section{max-width:none;margin:0;padding:40px 20px 72px;background:var(--near-black)}
+.browse-heading{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.browse-inner{max-width:660px;margin:0 auto}.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.bb{font-family:var(--sans);font-size:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);color:#fff;padding:12px 14px;cursor:pointer;text-align:left;transition:all .12s}
 .bb:hover{background:rgba(190,150,91,.14);border-color:rgba(190,150,91,.35);color:var(--gold-lt)}
 footer{text-align:center;padding:18px 24px 30px;font-size:11px;letter-spacing:.5px;color:rgba(255,255,255,.16);border-top:1px solid rgba(255,255,255,.05)}
 @media(max-width:520px){
@@ -123,8 +123,10 @@ footer{text-align:center;padding:18px 24px 30px;font-size:11px;letter-spacing:.5
   </div>
 </div>
 <div class="browse-section">
-  <div class="browse-heading">All Affiliations (A&ndash;Z)</div>
-  <div class="browse-grid" id="bgrid"></div>
+  <div class="browse-inner">
+    <div class="browse-heading">All Affiliations (A&ndash;Z)</div>
+    <div class="browse-grid" id="bgrid"></div>
+  </div>
 </div>
 <footer>Kentucky Derby 152 &nbsp;&middot;&nbsp; Media Center &nbsp;&middot;&nbsp; Questions? Contact the Media Credentials Desk</footer>
 
