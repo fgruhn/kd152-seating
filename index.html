@@ -37,7 +37,7 @@ body{font-family:var(--sans);background:var(--near-black);color:#222;min-height:
 .hero-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--gold-dim);opacity:1}
 .hero-rule{margin-top:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 25%,var(--gold) 75%,transparent);opacity:.5}
 /* ── Tab search card ── */
-.search-section{max-width:660px;margin:0 auto;padding:0 20px 48px;position:relative;z-index:10;background:#fff}
+.search-section{max-width:660px;margin:0 auto;padding:0 20px 72px;position:relative;z-index:10;background:#fff}
 .search-card{background:#fff;border-top:3px solid var(--gold);box-shadow:0 4px 24px rgba(0,0,0,.12)}
 .tab-bar{display:flex;border-bottom:1px solid #EAE4D8}
 .tab-btn{flex:1;padding:14px 10px 13px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray);background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-1px;cursor:pointer;transition:color .15s,border-color .15s}
@@ -96,12 +96,13 @@ body{font-family:var(--sans);background:var(--near-black);color:#222;min-height:
 .seat-no-result{color:var(--gray);font-size:13px;padding:8px 0}
 /* Browse */
 .browse-section{max-width:660px;margin:0 auto;padding:0 20px 72px}
-.browse-heading{font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#fff;margin-bottom:12px}
+.last-updated-bar{font-size:12px;font-weight:500;color:rgba(255,255,255,.55);letter-spacing:.5px;padding-bottom:20px}
+.browse-heading{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:16px;padding-top:8px}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:6px}
 .bb{font-family:var(--sans);font-size:15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);color:#fff;padding:10px 13px;cursor:pointer;text-align:left;transition:all .12s}
 .bb:hover{background:rgba(190,150,91,.14);border-color:rgba(190,150,91,.35);color:var(--gold-lt)}
 footer{text-align:center;padding:18px 24px 30px;font-size:11px;letter-spacing:.5px;color:rgba(255,255,255,.16);border-top:1px solid rgba(255,255,255,.05)}
-.last-updated{text-align:center;font-size:10px;color:rgba(255,255,255,.22);padding:0 24px 8px;letter-spacing:.4px}
+.hero-updated{display:none}
 @media(max-width:520px){
   .hero{padding:32px 16px 44px}
   .hero-logo img{height:140px;mix-blend-mode:multiply}
@@ -130,6 +131,7 @@ footer{text-align:center;padding:18px 24px 30px;font-size:11px;letter-spacing:.5
       <span class="hero-meta-dot"></span>
       <span class="hero-meta-item">May 2, 2026</span>
     </div>
+    <div class="hero-updated">Updated 5:30 PM ET, April 7, 2026</div>
   </div>
   <div class="hero-rule"></div>
 </div>
@@ -174,10 +176,11 @@ footer{text-align:center;padding:18px 24px 30px;font-size:11px;letter-spacing:.5
   </div>
 </div>
 <div class="browse-section">
+  <div class="last-updated-bar">Last updated: 5:30 PM ET, April 7, 2026</div>
   <div class="browse-heading">All Affiliations (A&ndash;Z)</div>
   <div class="browse-grid" id="bgrid"></div>
 </div>
-<div class="last-updated">Last updated: 5:21 PM ET, April 7, 2026</div>
+<div class="last-updated-spacer"></div>
 <footer>Kentucky Derby 152 &nbsp;&middot;&nbsp; Media Center &nbsp;&middot;&nbsp; Questions? Contact the Media Credentials Desk</footer>
 
 <!-- PWA Install Banner (Android/Chrome) -->
